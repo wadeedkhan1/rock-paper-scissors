@@ -1,49 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #333333;
 }
 
-input[type="button"] {
+h1{
+    font-size: 3.5rem;
+    color: #003366;
+}
+
+.choices input{
+    font-size: 7.5rem;
+    min-width: 160px;
     margin: 10px 10px;
-    padding: 20px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid #333;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 250px;
+    border-color: aliceblue;
+    transition: 0.3s;
+}
+.choices input:hover{
+    background-color: #8fa3fd;
+    transform: scale(1.05);
 }
 
-input[type="button"]:hover {
-    background-color: #ddd;
-}
-
-.results {
-    margin-top: 20px;
-    font-size: 24px;
+.scoreboard{
     font-weight: bold;
+    font-size: 1.5rem;
+    color: #333333;
 }
-
-.scoreboard {
-    margin-top: 20px;
-    border: 1px solid #333;
-    padding: 50px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    display: inline-block;
-}
-
-.scoreboard h3 {
-    margin-top: 0;
-}
-
-.scoreboard p {
-    margin: 5px 0;
+.results{
+    font-size: 2rem;
     font-weight: bold;
+    color: #333333;
 }
-
-.scoreboard span {
+.reset-button{
+    border-radius: 160px;
     font-weight: bold;
-    margin-left: 5px;
-    color: blue;
+    font-size: 2rem;
+    padding: 20px;
+    color: #333333;
+    background-color: #c9d2f8;
+    border-color: aliceblue;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.reset-button:hover{
+    background-color: #8fa3fd;
+    transform: scale(1.05);
 }
 
